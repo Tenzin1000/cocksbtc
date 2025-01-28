@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "pixel";
+  src: url("/font/Pixel-Emulator.otf");
+}
+
+@font-face {
+  font-family: "tesringasap";
+  src: url("/font/tesringasap.ttf");
+}
+@font-face {
+  font-family: "Asap-Regular";
+  src: url("/font/Asap-Regular.ttf");
+}
+@font-face {
+  font-family: "Asap-Bold";
+  src: url("/font/Asap-Bold.ttf");
+}
+@font-face {
+  font-family: "Asap-ExtraBold";
+  src: url("/font/Asap-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Asap-Medium";
+  src: url("/font/Asap-Medium.ttf");
+}
+@font-face {
+  font-family: "Asap-SemiBold";
+  src: url("/font/Asap-SemiBold.ttf");
+}
+
+* {
+  /* font-family: "pixel"; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: white;
+  /* font-family: "pixel"; */
+}

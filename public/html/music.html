@@ -1,0 +1,80 @@
+<style>
+  @font-face {
+    font-family: "pixel";
+    src: url("../font/Pixel-Emulator.otf");
+  }
+
+  .settings-container {
+    color: #fff;
+    border: 1px solid red;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "pixel";
+    background-color: #919191;
+  }
+
+  .music-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .music-box {
+    background-color: #05b453;
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .music-on {
+    background-color: #fff;
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left 0.3s, right 0.3s;
+  }
+
+  .active {
+    left: auto;
+    right: 0;
+    background-color: #f00;
+  }
+
+  input[type="range"] {
+    width: 150px;
+  }
+</style>
+
+<div class="settings-container">
+  <div>
+    <div class="music-container">
+      <div>
+        <label for="music">Music</label>
+      </div>
+      <div class="music-box" id="musicslider">
+        <div class="music-on" id="musicon"></div>
+      </div>
+    </div>
+    <div>
+      <label for="musicSlider">musicSlider</label>
+      <input type="range" min="0" max="100" id="musicSlider" />
+    </div>
+  </div>
+</div>
+
+<script>
+  const musicSlider = document.getElementById("musicslider");
+  const musicToggle = document.getElementById("musicon");
+
+  musicSlider.addEventListener("click", () => {
+    musicToggle.classList.toggle("active");
+  });
+</script>
