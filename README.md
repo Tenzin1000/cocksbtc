@@ -27,8 +27,7 @@
 ##### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Tenzin1000/Phaser-Shooting-Game.git
-cd Phaser-Shooting-Game
+git clone https://github.com/Tenzin1000/cocksbtc.git
 ```
 
 ##### 2. Install dependencies:
@@ -52,14 +51,11 @@ npm run dev
 ```plaintext
 Phaser-Shooting-Game/
 ├── public/
-│   ├── audio/
+│   ├── font/
 │   ├── dead/
 │   ├── html/
-│   ├── idle/
 │   ├── images/
-│   ├── shoot/
-│   ├── walk/
-│   ├── snow.png
+│   ├── sound/
 ├── src/
 │ ├── components/
 │ ├── scene/
